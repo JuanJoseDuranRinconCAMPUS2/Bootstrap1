@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://www.xtrafondos.com/wallpapers/asus-rog-logo-5087.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    display: flex;
+    background-color: darksalmon;
+    
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(25, 85, 77, 0.4);
+    color: white;
+}
+
+.navimg img{
+    width: 200px;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    transition: .3s;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display:block;
+    font-size: 30px;
+}
+
+.navbar-links li :hover {
+    background-color: rgba(22, 116, 116, 0.5);
+    transition: .3s;
+}
+
+.toggle {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    .toggle {
+        display: flex;
+
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .model{
+        background-image: url(https://i3.ytimg.com/vi/oHpwoC-NHNQ/maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .conteiner{
+        padding: 10rem;
+    }
+    .conteiner h1{
+        text-align: center;
+        font-size: 40px;
+        color:rgb(30, 179, 179);
+        text-decoration-line:underline;
+    }
+    .conteiner p{
+        margin: 1rem;
+        color:rgb(224, 197, 197);
+        font-size: 30px;
+        justify-content: center;
+    }
+    
+
+}
+@media (min-width: 1100px) {
+    .model{
+        background-image: url(https://i3.ytimg.com/vi/oHpwoC-NHNQ/maxresdefault.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 40rem;
+        margin: 5%;
+    
+    }
+
+    .conteiner{
+        padding: 10rem;
+    }
+    .conteiner h1{
+        text-align: center;
+        font-size: 40px;
+        color:rgb(30, 179, 179);
+        text-decoration-line:underline;
+    }
+    .conteiner p{
+        margin: 1rem;
+        color:rgb(224, 197, 197);
+        font-size: 20px;
+        justify-content: center;
+    }
+}
+a:link {text-decoration: none }
+
+a:visited {color: black;  font-family: arial; text-decoration: none }
+
+a:hover { color: black; font-family: arial; text-decoration: none }
+.conteiner h4{  
+    text-align: center;
+    justify-content: center;
+    margin-left: auto; margin-right: auto;
+    background-color: rgba(22, 116, 116, 0.5);
+    border-radius: 10%;
+    padding-top: 20px;
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+
+}
